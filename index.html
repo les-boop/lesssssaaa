@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>З днем народження, мамо! 🤍</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Comfortaa", sans-serif;
+            background: #fff8f7;
+            color: #5b4b4b;
+        }
+
+        section {
+            padding: 70px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* ГОЛОВНИЙ ЕКРАН */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #ffe8ec, #fff5e8);
+        }
+
+        .hero h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 55px;
+            color: #9b5968;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            50% {
+                transform: scale(1.15);
+            }
+        }
+
+        /* ПРО МАМУ */
+        .about {
+            background: white;
+        }
+
+        .about h2,
+        .surprise h2 {
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-size: 38px;
+            color: #9b5968;
+            margin-bottom: 40px;
+        }
+
+        .about-box {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about img {
+            width: 350px;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(120, 80, 80, 0.18);
+        }
+
+        .about-text {
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+        .signature {
+            margin-top: 25px;
+            font-size: 20px;
+            color: #9b5968;
+            font-weight: bold;
+        }
+
+        /* ПОБАЖАННЯ */
+        .wish {
+            background: #fff0f2;
+            text-align: center;
+        }
+
+        .wish h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 38px;
+            color: #9b5968;
+        }
+
+        .wish p {
+            font-size: 19px;
+            line-height: 2;
+        }
+
+        .wish span {
+            color: #b75d73;
+            font-weight: bold;
+        }
+
+        /* СЮРПРИЗ */
+        .surprise {
+            text-align: center;
+            background: white;
+        }
+
+        button {
+            border: none;
+            background: #c77b8d;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-family: "Comfortaa", sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #a95f72;
+            transform: scale(1.05);
+        }
+
+        #secret {
+            display: none;
+            margin: 30px auto 0;
+            max-width: 650px;
+            padding: 30px;
+            background: #fff0f2;
+            border-radius: 25px;
+            font-size: 19px;
+            line-height: 1.8;
+        }
+
+        /* ФУТЕР */
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            background: #9b5968;
+            color: white;
+        }
+
+        footer p {
+            margin: 7px;
+        }
+
+        /* АНІМАЦІЯ */
+        .show {
+            animation: appear 1s ease;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ТЕЛЕФОН */
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .about-box {
+                flex-direction: column;
+            }
+
+            .about img {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .about h2,
+            .surprise h2,
+            .wish h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ГОЛОВНИЙ ЕКРАН -->
+    <section class="hero">
+        <div class="container">
+            <div class="heart">🤍</div>
+
+            <h1>З днем народження, мамо!</h1>
+
+            <p>
+                Сьогодні особливий день, адже саме сьогодні хочеться
+                сказати тобі ще більше теплих і щирих слів. 🤍
+                <br><br>
+
+                Дякую тобі за твою любов, турботу, підтримку та за те
+                тепло, яке ти даруєш щодня.
+                <br><br>
+
+                Ти — найдорожча людина, і я безмежно щаслива,
+                що саме ти моя мама. 🌷
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ПРО МАМУ -->
+    <section class="about">
+        <div class="container">
+
+            <h2>Трішки про тебе...</h2>
+
+            <div class="about-box">
+
+                <img src="1.jpg" alt="Фото мами">
+
+                <div class="about-text">
+
+                    <p>
+                        Матусю, ти — людина, поруч із якою завжди
+                        стає тепліше й спокійніше. 🤍
+                    </p>
+
+                    <p>
+                        Дякую тобі за твою любов, турботу, терпіння
+                        та за ту величезну кількість тепла,
+                        яку ти щодня даруєш своїй родині. 🤍
+                    </p>
+
+                    <p>
+                        Нехай у твоєму житті буде якомога більше
+                        щасливих моментів, щирих усмішок
+                        і приємних сюрпризів. 🤍
+                    </p>
+
+                    <div class="signature">
+                        Ти в нас найкраща ❤️
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ПОБАЖАННЯ -->
+    <section class="wish">
+        <div class="container">
+
+            <h2>Мої побажання для тебе 🌷</h2>
+
+            <p>
+                Нехай кожен новий день<br>
+                приносить тобі <span>усмішку</span>,<br>
+                нехай поруч завжди будуть люди,<br>
+                які люблять і цінують тебе.
+                <br><br>
+
+                Нехай здійснюються твої мрії,<br>
+                знаходяться приводи для радості,<br>
+                а в серці завжди живуть<br>
+                <span>тепло, спокій і щастя.</span>
+                <br><br>
+
+                З днем народження, матусю! ❤️<br>
+                Дякую, що ти в мене є.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- СЮРПРИЗ -->
+    <section class="surprise">
+        <div class="container">
+
+            <h2>А тут є маленький сюрприз 🤍</h2>
+
+            <p>
+                Тут заховано кілька особливих слів,
+                які сьогодні найбільше хочеться сказати тобі.
+            </p>
+
+            <button onclick="showSecret()">
+                Відкрити сюрприз ✨
+            </button>
+
+            <div id="secret">
+                Матусю, я дуже тебе люблю! ❤️
+                <br><br>
+
+                Дякую тобі за все, що ти робиш для мене,
+                за твою підтримку, доброту та любов.
+                <br><br>
+
+                Я хочу, щоб ти завжди була щаслива,
+                усміхалася і знала, наскільки сильно
+                тебе люблять. 🤍
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ФУТЕР -->
+    <footer>
+        <p>З любов’ю від усієї родини ❤️</p>
+        <p>Найціннішій людині 🤍</p>
+    </footer>
+
+
+    <script>
+        function showSecret() {
+            let secret = document.getElementById("secret");
+
+            if (secret.style.display === "block") {
+                secret.style.display = "none";
+            } else {
+                secret.style.display = "block";
+                secret.classList.add("show");
+            }
+        }
+    </script>
+
+</body>
+</html>
+```
